@@ -13,7 +13,18 @@ $tel = $_POST["tel"];
 $range = $_POST["range"];
 $uname = $_POST["uname"];
 
-$sql = "insert into user(name, num, tel, five, joined) values('$uname', '$unum', '$four', '$tel', '$range')";
-mysqli_query($conn, $sql);
+$sql = "insert into user(name, num, tel, five, joined) values('$uname', '$unum', '$tel', '$four','$range')";
+
+
+if ( !mysqli_query ($conn, $sql) )
+
+{
+
+echo("쿼리오류 발생: " . mysqli_error($conn));
+
+}
+
+
+
 ?>
-<meta http-equiv="refresh" content="1;url=../index.html">
+
