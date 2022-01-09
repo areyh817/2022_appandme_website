@@ -27,5 +27,5 @@ echo("쿼리오류 발생: " . mysqli_error($conn));
 
 
 ?>
-<meta http-equiv="refresh" content="1;url=../index.html">
+<meta http-equiv="refresh" content="1;url=show.php">
 
