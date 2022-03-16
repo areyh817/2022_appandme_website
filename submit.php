@@ -11,11 +11,11 @@
 
 <body style="overflow-x:hidden">
   <header>
-    <img src="img/appandme_web_logo.png" alt="app&me" onclick="location.href='main.html'">
-    <span onclick="location.href='about.html'">ABOUT</span>
-    <span style="margin-left: 1%;" onclick="location.href='members_8th.html'">부원소개</span>
-    <span style="margin-left: 1%; color: #FF6384;" onclick="location.href='submit.php'">지원하기</span>
-    <span style="margin-left: 1%;" onclick="location.href='qna.php'">Q&A</span>
+    <img src="img/appandme_web_logo.png" alt="app&me" onclick="location.href='index.php'" style="cursor: pointer">
+    <span onclick="location.href='about.html'" style="cursor: pointer">ABOUT</span>
+    <span style="margin-left: 1%; cursor: pointer" onclick="location.href='members_8th.html'">부원소개</span>
+    <span style="margin-left: 1%; color: #FF6384; cursor: pointer" onclick="location.href='submit.php'">지원하기</span>
+    <span style="margin-left: 1%; cursor: pointer" onclick="location.href='qna.php'">Q&A</span>
   </header>
   <div class="margin">
     <div class="title">지원하기</div>
