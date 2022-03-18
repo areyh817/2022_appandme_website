@@ -31,6 +31,7 @@
 			<div class="apply" style="cursor: pointer;">
 				<span onclick="location.href='submit.php'" style="cursor: pointer;">지원하기</span>
 			</div>
+			
 		</div>
 
 	</center>
