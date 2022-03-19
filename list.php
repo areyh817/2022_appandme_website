@@ -37,6 +37,13 @@ span{
 <body>
     <div style="text-align: center; margin-top: 20px;">
         <span class = "addtxt">2022 앱앤미 지원현황</span>
+        <?php
+            include './db_conn.php';
+            ?>
+            <span>
+              <?php $sql ?>
+            </span>
+      
     </div>
 </body>
 </html>
