@@ -7,7 +7,7 @@
     border-collapse: collapse;
     font-family: 'NanumSquare', sans-serif !important;
     width: 70%;
-    margin-top : 30px;
+    margin-top : -100px;
     text-align : center;
     font-size : 13.5px;
   }
@@ -21,9 +21,14 @@
   th:first-child, td:first-child {
     border-left: none;
   }
-span{
+  span{
     font-family: 'NanumSquare', sans-serif !important;
-}
+  }
+  .addtxt{
+    font-size : 16px;
+    font-weight : bold;
+    margin-top : 30px;
+  }
 
 </style>
 <!DOCTYPE html>
@@ -37,7 +42,7 @@ span{
     <script src=""></script>
 </head>
 <body>
-    <div style="text-align: center; margin-top: 20px;">
+    <div style="text-align: center; margin-top: 50px;">
         <span class = "addtxt">2022 앱앤미 지원현황</span>
         <?php
             $conn = mysqli_connect('localhost','appandme','app2022!','appandme');
@@ -47,10 +52,10 @@ span{
         
             $count = mysqli_num_rows($result_set);
          
+            $rate = $count/6;
          
-         
-            echo '<br>지원자 수 : '.$count.'<br>';
-
+            echo '<br><br>지원자 수 : <b>'.$count.'명</b><br>';
+            echo '경쟁률 : <b>'.$rate.' : 1</b><br>';
             ?>
       
     </div>
