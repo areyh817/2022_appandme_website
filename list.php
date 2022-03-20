@@ -12,7 +12,7 @@
     font-size : 13.5px;
   }
   th, td {
-    padding-top : 50px;
+    padding-top : 30px;
     border-bottom: 1px solid #444444;
     border-left: 1px solid #444444;
     padding: 25px;
@@ -32,17 +32,26 @@ span{
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>App & Me 지원자 현황</title>
+	  <link rel="shortcut icon" href="img/favicon.ico">
+    <script src=""></script>
 </head>
 <body>
     <div style="text-align: center; margin-top: 20px;">
         <span class = "addtxt">2022 앱앤미 지원현황</span>
         <?php
-            include './db_conn.php';
+            $conn = mysqli_connect('localhost','appandme','app2022!','appandme');
+            $select_query = "SELECT name FROM submit";
+         
+            $result_set = mysqli_query($conn, $select_query);
+        
+            $count = mysqli_num_rows($result_set);
+         
+         
+         
+            echo '<br>지원자 수 : '.$count.'<br>';
+
             ?>
-            <span>
-              <?php $sql ?>
-            </span>
       
     </div>
 </body>
