@@ -52,7 +52,7 @@
         </tr>
         <tr id="line" align="left">
           <td class="no2_A" colspan="2" style="display:none;">
-          <span>&nbsp;A.&nbsp;&nbsp;</span>2022년 03월 18일 부터 2022년 03월 27일까지 입니다.</td>
+          <span>&nbsp;A.&nbsp;&nbsp;</span>2022년 03월 18일 부터 2022년 03월 27일 23:59분까지 입니다.</td>
         </tr>
 
         <tr id="line" align="center">
