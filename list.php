@@ -67,7 +67,7 @@
 include './db_conn.php';
 
 // select
-$sql_sel = "select * from submit";
+$sql_sel = "select * from submit order by student_id asc";
 $res= mysqli_query($conn, $sql_sel);
 
 if ( !mysqli_query ($conn, $sql_sel) )
